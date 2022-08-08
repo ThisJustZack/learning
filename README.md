@@ -5,6 +5,7 @@ This repository contains the different projects/assignments I have worked on whi
 Currently, this includes
 - ansible
 - cryptography
+- database (SQL)
 - data science
 - html/css
 - machine learning
