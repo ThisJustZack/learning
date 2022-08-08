@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side
+{
+    position: relative;
+    background: #003147;
+    padding: 50px;
+}
+.profile
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+.information
+{
+    padding-top: 15px;
+
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.information ul
+{
+    position: relative;
+}
+.information ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.information ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.information ul li .text
+{
+    color: #fff;
+    font-weight: 300;
+}
+.information.education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.information.education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+.information.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.information.education h4:nth-child(3)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.information ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 2px 0;
+    cursor: pointer;
+}
+.information.skill ul li .language
+{
+    color: #fff;
+    font-weight: 500;
+}
+.information.skill ul li .tool
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 30px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about.profile .description
+{
+    align-self: flex-start;
+    color: #333;
+    font-weight: 500;
+}
+.about.coursework courses
+{
+    color: #333;
+}
+.project .name
+{
+    color: #333;
+    font-weight: 500;
+}
+.project .tool
+{
+    color: #333;
+    font-weight: 300;
+}
+.project .description ul
+{
+    color: #333;
+    padding-left: 15px;
+}
