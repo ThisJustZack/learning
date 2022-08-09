@@ -1,0 +1,39 @@
+- hosts: all
+  tasks:
+    - name: Update Arch OS
+      become: yes
+      community.general.pacman:
+        update_cache: yes
+        upgrade: 'yes'
+      when: ansible_os_family == "Archlinux"
+
+    - name: Update Red Hat OS
+      become: yes
+      ansible.builtin.dnf:
+        update_cache: yes
+        upgrade: 'yes'
+      when: ansible_os_family == "Redhat"
+
+    - name: Update Debian OS
+      become: yes
+      ansible.builtin.apt:
+        update_cache: yes
+        upgrade: 'yes'
+      when: ansible_os_family == "Debian"
+
+    - name: Check if Nix is available
+      block:
+        - name: Try checking Nix version
+          shell: nix-env --version
+
+        - name: Nix is available
+          debug:
+            msg: Nix is installed
+      
+      rescue:
+        - name: Nix is unavailable
+          debug:
+            msg: Nix is not installed; Installing Nix
+
+        - name: Install nix
+          shell: sh <(curl -L https://nixos.org/nix/install) --daemon

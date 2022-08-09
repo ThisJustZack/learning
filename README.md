@@ -8,5 +8,6 @@ Currently, this includes
 - database (SQL)
 - data science
 - html/css
-- machine learning
+- machine learning (currently learning)
+- nix (currently learning)
 - terraform

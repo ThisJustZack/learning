@@ -1,3 +1,3 @@
 ### Ansible
 
-This are of the repository includes the files I used when learning Data Science with free time.
+This area of the repository includes the files I used when learning Ansible with free time before knowing about Nix.
